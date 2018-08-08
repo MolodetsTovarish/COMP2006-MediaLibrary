@@ -122,7 +122,12 @@
     <ClInclude Include="TV.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Album.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="TV.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
