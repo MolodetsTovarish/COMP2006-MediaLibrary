@@ -8,7 +8,6 @@ Movie::Movie(const string title, const string genre, const int year, const float
 {
 	set_title(title);
 	set_genre(genre);
-	set_genre(genre);
 	set_year(year);
 	set_runtime(runtime);
 };

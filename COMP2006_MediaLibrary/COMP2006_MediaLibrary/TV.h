@@ -12,7 +12,7 @@ class TV
 public:
 	//constructors
 	TV() {};
-	TV(const string &title, const string &genre, const int &num_of_episodes, /*episodes (list of episodes),*/ const int &year, const float &runtime);
+	TV(const string title, const string genre, const int num_of_episodes, /*episodes (list of episodes),*/ const int year, const float runtime);
 
 	//copy constructor
 	TV(const TV &other);
@@ -28,11 +28,11 @@ public:
 	const float get_runtime();
 
 	//setters
-	void set_title(const string &title);
-	void set_genre(const string &genre);
-	void set_num_of_episodes(const int &num_of_episodes);
-	void set_year(const int &year);
-	void set_runtime(const float &runtime);
+	void set_title(const string title);
+	void set_genre(const string genre);
+	void set_num_of_episodes(const int num_of_episodes);
+	void set_year(const int year);
+	void set_runtime(const float runtime);
 
 	//custom methods
 	const string get_tv();
