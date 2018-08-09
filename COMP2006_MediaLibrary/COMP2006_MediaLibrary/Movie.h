@@ -12,7 +12,7 @@ class Movie
 public:
 	//constructors
 	Movie() {};
-	Movie(const string &title, const string &genre, const int &year, const float &runtime);
+	Movie(const string title, const string genre, const int year, const float runtime);
 
 	//copy constructor
 	Movie(const Movie &other);
@@ -27,10 +27,10 @@ public:
 	const float get_runtime();
 
 	//setters
-	void set_title(const string &title);
-	void set_genre(const string &genre);
-	void set_year(const int &year);
-	void set_runtime(const float &runtime);
+	void set_title(const string title);
+	void set_genre(const string genre);
+	void set_year(const int year);
+	void set_runtime(const float runtime);
 
 	//custom methods
 	const string get_movie();
