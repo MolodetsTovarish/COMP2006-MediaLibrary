@@ -12,7 +12,7 @@ class Book
 public:
 	//constructors
 	Book() {};
-	Book(const string &title, const string &author, const string &genre, const int &num_of_pages, const int &year);
+	Book(const string title, const string author, const string genre, const int num_of_pages, const int year);
 
 	//copy constructor
 	Book(const Book &other);
@@ -28,11 +28,11 @@ public:
 	const int get_year();
 
 	//setters
-	void set_title(const string &title);
-	void set_author(const string &author);
-	void set_genre(const string &genre);
-	void set_num_of_pages(const int &num_of_pages);
-	void set_year(const int &year);
+	void set_title(const string title);
+	void set_author(const string author);
+	void set_genre(const string genre);
+	void set_num_of_pages(const int num_of_pages);
+	void set_year(const int year);
 
 	//custom methods
 	const string get_book();
