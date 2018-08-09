@@ -17,6 +17,8 @@ public:
 	//copy constructor
 	Game(const Game &other);
 
+	Game(string title, string platform, string genre, const int year);
+
 	//destructor
 	~Game();
 
@@ -27,10 +29,10 @@ public:
 	const int get_year();
 
 	//setters
-	void set_title(const string &title);
-	void set_platform(const string &platform);
-	void set_genre(const string &genre);
-	void set_year(const int &year);
+	void set_title(const string title);
+	void set_platform(const string platform);
+	void set_genre(const string genre);
+	void set_year(const int year);
 
 	//custom methods
 	const string get_game();
