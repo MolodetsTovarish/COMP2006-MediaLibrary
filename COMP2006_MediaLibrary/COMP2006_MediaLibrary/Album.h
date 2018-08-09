@@ -12,7 +12,7 @@ class Album
 public:
 	//constructors
 	Album() {};
-	Album(const string &title, const string &artist, const string &genre, const int &num_of_tracks, /*tracks (list of tracks),*/ const int &year, const float &runtime);
+	Album(const string title, const string artist, const string genre, const int num_of_tracks, /*tracks (list of tracks),*/ const int year, const float runtime);
 
 	//copy constructor
 	Album(const Album &other);
@@ -29,12 +29,12 @@ public:
 	const float get_runtime();
 
 	//setters
-	void set_title(const string &title);
-	void set_artist(const string &artist);
-	void set_genre(const string &genre);
-	void set_num_of_tracks(const int &num_of_tracks);
-	void set_year(const int &year);
-	void set_runtime(const float &runtime);
+	void set_title(const string title);
+	void set_artist(const string artist);
+	void set_genre(const string genre);
+	void set_num_of_tracks(const int num_of_tracks);
+	void set_year(const int year);
+	void set_runtime(const float runtime);
 
 	//custom methods
 	const string get_album();
