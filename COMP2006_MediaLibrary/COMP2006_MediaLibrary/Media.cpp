@@ -1,14 +1,5 @@
 #include "Media.h"
 
-// Media defintions
-Media::Media() {};
-
-// destructor 
-Media::~Media()
-{
-	std::cout << "Done" << std::endl;
-};
-
 // setters
 void Media::set_title(string title)
 {

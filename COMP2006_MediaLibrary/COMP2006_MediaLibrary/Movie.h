@@ -11,7 +11,7 @@ class Movie
 {
 public:
 	//constructors
-	Movie() {};
+	Movie();
 	Movie(const string title, const string genre, const int year, const float runtime);
 
 	//copy constructor

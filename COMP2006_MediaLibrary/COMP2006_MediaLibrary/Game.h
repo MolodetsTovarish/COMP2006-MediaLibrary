@@ -11,7 +11,7 @@ class Game
 {
 public:
 	//constructors
-	Game() {};
+	Game();
 	Game(const string &title, const string &platform, const string &genre, const int &year);
 
 	//copy constructor

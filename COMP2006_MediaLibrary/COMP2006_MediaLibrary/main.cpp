@@ -13,9 +13,9 @@ template <typename T>
 
 int main()
 {
-	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
+	Album Queen{ "me", "Queen", "rock", 13, 1997, 140.f };
 
-	cout << Queen.get_artist << endl
+	cout << Queen.get_artist << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');

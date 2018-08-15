@@ -1,17 +1,16 @@
 //#ifndef _BOOK_H_
 //#define _BOOK_H_
-
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
-#include <iostream>
 
 class Book
 {
 public:
 	//constructors
-	Book() {};
+	Book();
 	Book(const string title, const string author, const string genre, const int num_of_pages, const int year);
 
 	//copy constructor

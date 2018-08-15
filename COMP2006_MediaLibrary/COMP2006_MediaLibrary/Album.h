@@ -12,17 +12,8 @@ class Album: Media
 {
 public:
 	//constructors
-	Album() {};
-	Album(const string title, const string artist, const string genre, const int num_of_tracks, /*tracks (list of tracks),*/ const int year, const float runtime)
-	{
-		 set_title( title);
-
-		 set_genre( genre);
-
-		 set_year(year);
-
-		 set_runtime(runtime);
-	}
+	Album();
+	Album(const string title, const string artist, const string genre, const int num_of_tracks, /*tracks (list of tracks),*/ const int year, const float runtime);
 
 	//copy constructor
 	Album(const Album &other);

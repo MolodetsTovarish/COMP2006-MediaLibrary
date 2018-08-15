@@ -3,17 +3,17 @@
 
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
-#include <iostream>
 
 class TV
 {
 public:
 	//constructors
-	TV() {};
+	TV();
 	TV(const string title, const string genre, const int num_of_episodes, /*episodes (list of episodes),*/ const int year, const float runtime);
-
+	
 	//copy constructor
 	TV(const TV &other);
 
