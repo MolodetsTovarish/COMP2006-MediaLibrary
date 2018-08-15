@@ -118,6 +118,7 @@
     <ClInclude Include="Album.h" />
     <ClInclude Include="Book.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Media.h" />
     <ClInclude Include="Movie.h" />
     <ClInclude Include="TV.h" />
   </ItemGroup>
@@ -126,6 +127,7 @@
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Media.cpp" />
     <ClCompile Include="Movie.cpp" />
     <ClCompile Include="TV.cpp" />
   </ItemGroup>
