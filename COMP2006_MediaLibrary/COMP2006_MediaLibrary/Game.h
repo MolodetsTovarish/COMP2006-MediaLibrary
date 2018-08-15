@@ -1,11 +1,10 @@
 //#ifndef _GAME_H_
 //#define _GAME_H_
-
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
-#include <iostream>
 
 class Game
 {

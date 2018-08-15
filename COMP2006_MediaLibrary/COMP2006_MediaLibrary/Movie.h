@@ -1,11 +1,10 @@
 //#ifndef _MOVIE_H_
 //#define _MOVIE_H_
-
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
-#include <iostream>
 
 class Movie
 {
