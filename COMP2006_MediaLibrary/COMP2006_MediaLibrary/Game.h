@@ -25,7 +25,7 @@ public:
 	const string get_platform();
 
 	//setters
-	void set_platform(const string &platform);
+	void set_platform(const string platform);
 
 
 	// custom output

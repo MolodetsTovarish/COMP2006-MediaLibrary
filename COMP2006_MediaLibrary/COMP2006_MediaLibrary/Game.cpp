@@ -22,7 +22,6 @@ const string Game::get_platform()
 }
 
 // setters
-
 void Game::set_platform(string platform)
 {
 	m_platform = platform;
