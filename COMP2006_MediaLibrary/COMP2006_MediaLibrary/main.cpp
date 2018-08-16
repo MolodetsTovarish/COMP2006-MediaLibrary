@@ -31,7 +31,7 @@ void const get_input(const string question, T &input) { // see? see the T?
 		cin.clear();
 		// this ignores anything that may have been sitting in the input buffer up to the next new line
 		//character
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	}
 }
 
