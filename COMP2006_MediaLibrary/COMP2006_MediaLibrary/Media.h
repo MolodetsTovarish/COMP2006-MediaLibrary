@@ -25,6 +25,10 @@ public:
 	void set_genre(const string &genre);
 	void set_year(const int &year);
 	void set_runtime(const int &runtime);
+
+	// custom output
+	const string output();
+	
 private:
 	string m_title;
 	string m_genre;
