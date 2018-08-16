@@ -77,7 +77,7 @@ int main()
 
 	for (auto mediaobject : mediaobjects)
 	{
-		mediaobject.output();
+		mediaobject->output();
 	}
 
 	cin.clear();
