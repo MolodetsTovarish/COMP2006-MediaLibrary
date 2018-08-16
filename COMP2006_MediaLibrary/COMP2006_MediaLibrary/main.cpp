@@ -39,14 +39,11 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
-<<<<<<< HEAD
 	vector <Album*> Albums;
 	
-=======
 	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
 	Album Album;
 
->>>>>>> parent of c2adbca... Trying to create a vector to add the albums too
 	string title;
 	string artist;
 	string genre;
@@ -78,7 +75,6 @@ int main()
 	cin >> runtime;
 	Album.set_runtime(runtime);
 
-<<<<<<< HEAD
 	//Media album{title, artist, genre, num_of_tracks, year, runtime};
 
 	Albums.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
@@ -89,10 +85,7 @@ int main()
 		cout << "your album title is " << Album->get_title()<< ", the artist is " + Album->get_artist() << ", the Genre is " << Album->get_genre() << ", It has " << Album->get_num_of_tracks() + " tracks in it, it came out in the year " << Album->get_year() << " and its total runtime is " << Album->get_runtime() + " minutes.";
 	}
 	
-=======
 	cout << Album.output() << endl;
-
->>>>>>> parent of c2adbca... Trying to create a vector to add the albums too
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
