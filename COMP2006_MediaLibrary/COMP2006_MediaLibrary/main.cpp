@@ -138,7 +138,7 @@ int main()
 
 				get_input("What is the title of the Game? ", title);
 				get_input("What is the game's platform? ", platform);
-				get_input("What is the genre of the album? ", genre);
+				get_input("What is the genre of the game? ", genre);
 				get_input("What year was the game released? ", year);
 
 				games.push_back(new Game{ title, platform, genre, year });
