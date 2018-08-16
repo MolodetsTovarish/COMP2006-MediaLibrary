@@ -37,9 +37,9 @@ int main()
 {
 	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
 
-	//cout << Queen.get_artist << endl;
+	cout << to_string(Queen.get_artist) << endl;
 
-	cout << "fuck" << endl;
+	//cout <<  << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');

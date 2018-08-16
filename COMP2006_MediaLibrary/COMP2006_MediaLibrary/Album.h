@@ -25,7 +25,6 @@ public:
 	const string get_artist();
 	const int get_num_of_tracks();
 
-
 	//setters
 	void set_artist(const string artist);
 	void set_num_of_tracks(const int num_of_tracks);

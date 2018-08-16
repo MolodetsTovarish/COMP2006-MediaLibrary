@@ -31,8 +31,6 @@
 
 
 	// getters
-
-
 	const string Album::get_artist()
 	{
 		return m_artist;
