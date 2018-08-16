@@ -66,15 +66,12 @@ int main()
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
 
-	//Media album{title, artist, genre, num_of_tracks, year, runtime};
 	mediaobjects.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
 
 	for (auto mediaobject : mediaobjects)
 	{
-		cout << "your album title is " << mediaobject->get_title() << endl; //<< ", the artist is " + mediaobject.->get_artist() << ", the Genre is " << mediaobject->get_genre() << ", It has " << mediaobject->get_num_of_tracks() + " tracks in it, it came out in the year " << mediaobject->get_year() << " and its total runtime is " << mediaobject->get_runtime() + " minutes.";
+		cout << mediaobject->output() << endl;
 	}
-	
-	//cout << Album.output() << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
