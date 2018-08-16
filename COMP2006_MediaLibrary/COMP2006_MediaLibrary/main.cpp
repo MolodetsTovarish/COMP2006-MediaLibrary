@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Album.h"
+#include <iostream>
 
 using namespace std;
 
@@ -37,8 +38,7 @@ int main()
 {
 	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
 
-	//cout << Queen.get_artist << endl;
-
+	cout << Queen.get_runtime() << endl;
 	cout << "fuck" << endl;
 
 	cin.clear();
