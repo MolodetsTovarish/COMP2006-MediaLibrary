@@ -39,8 +39,9 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
-	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
-	Album Album;
+	
+	vector <Album> Albums;
+	
 
 	string title;
 	string artist;
@@ -51,29 +52,35 @@ int main()
 
 	cout << "Enter a Title for the Album: ";
 	cin >> title;
-	Album.set_title(title);
+
 
 	cout << "Enter a Artist for the Album ";
 	cin >> artist;
-	Album.set_artist(artist);
+	
 
 	cout << "Enter a genre for the Album: ";
 	cin >> genre;
-	Album.set_genre(genre);
+	
 
 	cout << "Enter how many tacks are in the Album: ";
 	cin >> num_of_tracks;
-	Album.set_num_of_tracks(num_of_tracks);
+	
 
 	cout << "Enter what year the Album came out: ";
 	cin >> year;
-	Album.set_year(year);
+
 
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
-	Album.set_runtime(runtime);
 
-	cout << Album.output() << endl;
+	Album album{title, artist, genre, num_of_tracks, year, runtime};
+
+	Albums.push_back(album);
+
+	for (Album &album : Albums) {
+		album.output();
+	}
+
 
 
 	cin.clear();
