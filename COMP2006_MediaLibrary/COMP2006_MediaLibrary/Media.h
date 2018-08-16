@@ -10,6 +10,7 @@ public:
 	Media();
 	//Constructor
 	Media(string title, string genre, int year, int runtime);
+	Media(string title, string genre, int year);
 
 	//Deconstructor
 	//~Media();

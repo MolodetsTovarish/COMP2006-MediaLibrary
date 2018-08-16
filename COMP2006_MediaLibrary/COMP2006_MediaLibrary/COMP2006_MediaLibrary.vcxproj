@@ -119,10 +119,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Album.h" />
+    <ClInclude Include="Book.h" />
     <ClInclude Include="Media.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Album.cpp" />
+    <ClCompile Include="Book.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Media.cpp" />
   </ItemGroup>
