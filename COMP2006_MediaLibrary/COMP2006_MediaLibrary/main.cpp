@@ -39,8 +39,14 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
+<<<<<<< HEAD
 	vector <Album*> Albums;
 	
+=======
+	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
+	Album Album;
+
+>>>>>>> parent of c2adbca... Trying to create a vector to add the albums too
 	string title;
 	string artist;
 	string genre;
@@ -50,27 +56,29 @@ int main()
 
 	cout << "Enter a Title for the Album: ";
 	cin >> title;
-
+	Album.set_title(title);
 
 	cout << "Enter a Artist for the Album ";
 	cin >> artist;
-	
+	Album.set_artist(artist);
 
 	cout << "Enter a genre for the Album: ";
 	cin >> genre;
-	
+	Album.set_genre(genre);
 
 	cout << "Enter how many tacks are in the Album: ";
 	cin >> num_of_tracks;
-	
+	Album.set_num_of_tracks(num_of_tracks);
 
 	cout << "Enter what year the Album came out: ";
 	cin >> year;
-
+	Album.set_year(year);
 
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
+	Album.set_runtime(runtime);
 
+<<<<<<< HEAD
 	//Media album{title, artist, genre, num_of_tracks, year, runtime};
 
 	Albums.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
@@ -81,6 +89,10 @@ int main()
 		cout << "your album title is " << Album->get_title()<< ", the artist is " + Album->get_artist() << ", the Genre is " << Album->get_genre() << ", It has " << Album->get_num_of_tracks() + " tracks in it, it came out in the year " << Album->get_year() << " and its total runtime is " << Album->get_runtime() + " minutes.";
 	}
 	
+=======
+	cout << Album.output() << endl;
+
+>>>>>>> parent of c2adbca... Trying to create a vector to add the albums too
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
