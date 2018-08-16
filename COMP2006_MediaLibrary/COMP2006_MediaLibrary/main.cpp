@@ -39,10 +39,7 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
-	vector <Album*> Albums;
-	
-	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
-	Album Album;
+	vector<Media*> mediaobjects;
 
 	string title;
 	string artist;
@@ -69,17 +66,15 @@ int main()
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
 
-	Album.set_runtime(runtime);
-
 	//Media album{title, artist, genre, num_of_tracks, year, runtime};
-	Albums.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
+	mediaobjects.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
 
-	for (auto Album : Albums)
+	for (auto mediaobject : mediaobjects)
 	{
-		cout << "your album title is " << Album->get_title()<< ", the artist is " + Album->get_artist() << ", the Genre is " << Album->get_genre() << ", It has " << Album->get_num_of_tracks() + " tracks in it, it came out in the year " << Album->get_year() << " and its total runtime is " << Album->get_runtime() + " minutes.";
+		cout << "your album title is " << mediaobject->get_title() << endl; //<< ", the artist is " + mediaobject.->get_artist() << ", the Genre is " << mediaobject->get_genre() << ", It has " << mediaobject->get_num_of_tracks() + " tracks in it, it came out in the year " << mediaobject->get_year() << " and its total runtime is " << mediaobject->get_runtime() + " minutes.";
 	}
 	
-	cout << Album.output() << endl;
+	//cout << Album.output() << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
