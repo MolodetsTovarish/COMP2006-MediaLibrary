@@ -5,6 +5,7 @@
 #include "Album.h"
 #include "Book.h"
 #include "Game.h"
+#include "Movie.h"
 
 using namespace std;
 
@@ -44,6 +45,7 @@ int main()
 	vector<Album*> albums;
 	vector<Book*> books;
 	vector<Game*> games;
+	vector<Movie*> movies;
 
 	//
 	int userSelection;
@@ -66,7 +68,9 @@ int main()
 		cout << "4) Display Current Books" << endl;
 		cout << "5) Add a Game" << endl;
 		cout << "6) Display Current Games" << endl;
-		get_input("7) Exit\n**************************", userSelection);
+		cout << "7) Add a Movie" << endl;
+		cout << "8) Display Current Movies" << endl;
+		get_input("9) Exit\n**************************", userSelection);
 
 		switch (userSelection)
 		{
@@ -154,7 +158,33 @@ int main()
 			}
 			break;
 
-		case 7: //Exit the system
+		case 7: //Adding a Movie
+			do
+			{
+				string title;
+				string genre;
+				int year;
+				int runtime;
+
+				get_input("What is the title of the Movie? ", title);
+				get_input("What is the genre of the movie? ", genre);
+				get_input("What year was the movie released? ", year);
+				get_input("What is the runtime for the movie? ", runtime);
+
+				movies.push_back(new Movie{ title, genre, year, runtime });
+
+				get_input("Do you want to add another movie? (y or n)", status);
+			} while (status != 'n');
+			break;
+
+		case 8: //Display the games
+			for (auto movie : movies)
+			{
+				cout << movie->output() << endl;
+			}
+			break;
+
+		case 9: //Exit the system
 			 break;
 
 		default: //Put something in me

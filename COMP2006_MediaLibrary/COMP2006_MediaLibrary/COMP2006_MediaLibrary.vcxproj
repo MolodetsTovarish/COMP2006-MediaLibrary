@@ -122,6 +122,7 @@
     <ClInclude Include="Book.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Media.h" />
+    <ClInclude Include="Movie.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Album.cpp" />
@@ -129,6 +130,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Media.cpp" />
+    <ClCompile Include="Movie.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
