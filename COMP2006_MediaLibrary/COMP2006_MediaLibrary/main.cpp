@@ -39,8 +39,15 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
+<<<<<<< HEAD
 
 	vector <Album*> Albums;
+=======
+	vector <Album*> Albums;
+	
+	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
+	Album Album;
+>>>>>>> 1dc4787cf649d93972e2f7f0db4fe9743c42473b
 
 	string title;
 	string artist;
@@ -66,6 +73,12 @@ int main()
 
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
+<<<<<<< HEAD
+=======
+	Album.set_runtime(runtime);
+
+	//Media album{title, artist, genre, num_of_tracks, year, runtime};
+>>>>>>> 1dc4787cf649d93972e2f7f0db4fe9743c42473b
 
 	Albums.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
 
@@ -73,6 +86,11 @@ int main()
 	{
 		cout << "your album title is " << Album->get_title()<< ", the artist is " + Album->get_artist() << ", the Genre is " << Album->get_genre() << ", It has " << Album->get_num_of_tracks() + " tracks in it, it came out in the year " << Album->get_year() << " and its total runtime is " << Album->get_runtime() + " minutes.";
 	}
+<<<<<<< HEAD
+=======
+	
+	cout << Album.output() << endl;
+>>>>>>> 1dc4787cf649d93972e2f7f0db4fe9743c42473b
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
