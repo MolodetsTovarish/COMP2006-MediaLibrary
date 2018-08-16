@@ -3,17 +3,17 @@
 
 #pragma once
 #include <string>
-#include "Media.h"
 #include <iostream>
+#include "Media.h"
 
 using namespace std;
 
-class Album: Media 
+class Album: public Media 
 {
 public:
 	//constructors
 	Album();
-	Album(const string title, const string artist, const string genre, const int num_of_tracks, /*tracks (list of tracks),*/ const int year, const float runtime);
+	Album(const string title, const string artist, const string genre, const int num_of_tracks, /*tracks (list of tracks),*/ const int year, const int runtime);
 
 	//copy constructor
 	Album(const Album &other);
@@ -31,8 +31,8 @@ public:
 	void set_num_of_tracks(const int num_of_tracks);
 
 	//custom methods
-	const string get_album();
-	void set_album(const string &title, const string &artist, const string &genre, const int &num_of_tracks, /*tracks (list of tracks),*/ const int &year, const float &runtime);
+	//const string get_album();
+	//void set_album(const string &title, const string &artist, const string &genre, const int &num_of_tracks, /*tracks (list of tracks),*/ const int &year, const int &runtime);
 
 private:
 	string m_artist;

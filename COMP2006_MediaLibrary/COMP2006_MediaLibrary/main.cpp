@@ -35,9 +35,9 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
-	Album Queen{ "me", "Queen", "rock", 13, 1997, 140.f };
+	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
 
-	cout << Queen.get_artist << endl;
+	//cout << Queen.get_artist << endl;
 
 	cout << "fuck" << endl;
 
