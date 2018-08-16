@@ -12,6 +12,13 @@ Media::Media(string title, string genre, int year, int runtime)
 	set_runtime(runtime);
 };
 
+Media::Media(string title, string genre, int year)
+{
+	set_title(title);
+	set_genre(genre);
+	set_year(year);
+};
+
 // setters
 void Media::set_title(const string &title)
 {

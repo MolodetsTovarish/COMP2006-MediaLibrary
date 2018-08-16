@@ -3,7 +3,7 @@
 // Book defintions
 Book::Book() {};
 
-Book::Book(const string &title, const string &author, const string &genre, const int &num_of_pages, const int &year)
+Book::Book(const string title, const string author, const string genre, const int num_of_pages, const int year)
 	: Media(title, genre, year)
 {
 	set_author(author);

@@ -3,6 +3,7 @@
 #include <vector>
 #include"Media.h"
 #include "Album.h"
+#include "Book.h"
 
 using namespace std;
 
@@ -40,6 +41,7 @@ void const get_input(const string question, T &input) { // see? see the T?
 int main()
 {
 	vector<Album*> albums;
+	vector<Book*> books;
 
 	//
 	int userSelection;
@@ -58,7 +60,9 @@ int main()
 		cout << "Please Select an Option" << endl;
 		cout << "1) Add an Album" << endl;
 		cout << "2) Display Current Albums" << endl;
-		get_input("3) Exit\n**************************", userSelection);
+		cout << "4) Add an Book" << endl;
+		cout << "5) Display Current Books" << endl;
+		get_input("6) Exit\n**************************", userSelection);
 
 		switch (userSelection)
 		{
@@ -92,7 +96,35 @@ int main()
 			 }
 			 break;
 
-		case 3: //Exit the system
+		case 4: //Adding an book
+			do
+			{
+				string title;
+				string author;
+				string genre;
+				int num_of_pages;
+				int year;
+
+				get_input("What is the title of the Book? ", title);
+				get_input("What is the authors's name? ", author);
+				get_input("What is the genre of the album? ", genre);
+				get_input("How many pages are there? ", num_of_pages);
+				get_input("What year was the book released? ", year);
+
+				books.push_back(new Book{ title, author, genre, num_of_pages, year});
+
+				get_input("Do you want to add another book? (y or n)", status);
+			} while (status != 'n');
+			break;
+			
+		case 5: //Display the books
+			for (auto book : books)
+			{
+				cout << book->output() << endl;
+			}
+			break;
+
+		case 6: //Exit the system
 			 break;
 
 		default: //Put something in me
