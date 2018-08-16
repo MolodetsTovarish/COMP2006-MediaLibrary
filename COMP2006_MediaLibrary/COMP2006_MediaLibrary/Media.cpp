@@ -59,5 +59,5 @@ const int Media::get_runtime()
 //output
 const string Media::output()
 {
-	return "your album title is " + get_title() + ", the Genre is " + get_genre() + ", it came out in the year " + to_string(get_year()) + " and its total runtime is " + to_string(get_runtime()) + " minutes.";
+	return "Your album title is " + get_title() + ", the Genre is " + get_genre() + ", it came out in the year " + to_string(get_year()) + " and its total runtime is " + to_string(get_runtime()) + " minutes." + "\n";
 }

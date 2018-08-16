@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <iostream>
 #include"Media.h"
 #include "Album.h"
 
@@ -33,47 +32,81 @@ void const get_input(const string question, T &input) { // see? see the T?
 		//character
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	}
-}
+}//end of get_input
 
-	
-
+/*
+	The init
+*/
 int main()
 {
-	vector<Album*> mediaobjects;
+	vector<Album*> albums;
 
-	string title;
-	string artist;
-	string genre;
-	int num_of_tracks;
-	int year;
-	int runtime;
+	//
+	int userSelection;
+	//Welcome message
+	cout << "Welcome to the Media Organizer\n" << "Created by Ross Keddy, Branden Shirriff, and Misha Okner\n\n" << endl;
 
-	cout << "Enter a Title for the Album: ";
-	cin >> title;
-
-	cout << "Enter a Artist for the Album ";
-	cin >> artist;
-
-	cout << "Enter a genre for the Album: ";
-	cin >> genre;
-
-	cout << "Enter how many tacks are in the Album: ";
-	cin >> num_of_tracks;
-
-	cout << "Enter what year the Album came out: ";
-	cin >> year;
-
-	cout << "Enter the runtime of the Album (in mintues): ";
-	cin >> runtime;
-
-	mediaobjects.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
-
-	for (auto album : mediaobjects)
+	/*
+	*	The user interface
+	*/
+	do
 	{
-		cout << album->output() << endl;
-	}
+		char status = 'y';
+		userSelection = 3;
 
+		cout << "**************************" << endl;
+		cout << "Please Select an Option" << endl;
+		cout << "1) Add an Album" << endl;
+		cout << "2) Display Current Albums" << endl;
+		get_input("3) Exit\n**************************", userSelection);
+
+		switch (userSelection)
+		{
+		case 1: //Adding an artist
+			 do
+			 {
+				string title;
+				string artist;
+				string genre;
+				int num_of_tracks;
+				int year;
+				int runtime;
+
+				get_input("What is the title of the album? ", title);
+				get_input("What is the artist's name? ", artist);
+				get_input("What is the genre of the album? ", genre);
+				get_input("How many tracks are there? ", num_of_tracks);
+				get_input("What year was the album released? ", year);
+				get_input("What is the runtime for the album? ", runtime);
+
+				albums.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
+
+				get_input("Do you want to add another album? (y or n)", status);
+			 } while (status != 'n');
+			break;
+
+		case 2: //Display the artists
+			 for (auto album : albums)
+			 {
+				cout << album->output() << endl;
+			 }
+			 break;
+
+		case 3: //Exit the system
+			 break;
+
+		default: //Put something in me
+			 userSelection = 3;
+			 break;
+		}//End of switch
+	} while (userSelection != 3); //End of loop
+
+
+	//Exit protocol
+	cout << "Press enter to exit." << endl;
+
+	//Clear buffer
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cin.get();
-}
+}//End of main
