@@ -4,6 +4,7 @@
 #include"Media.h"
 #include "Album.h"
 #include "Book.h"
+#include "Game.h"
 
 using namespace std;
 
@@ -42,6 +43,7 @@ int main()
 {
 	vector<Album*> albums;
 	vector<Book*> books;
+	vector<Game*> games;
 
 	//
 	int userSelection;
@@ -60,9 +62,11 @@ int main()
 		cout << "Please Select an Option" << endl;
 		cout << "1) Add an Album" << endl;
 		cout << "2) Display Current Albums" << endl;
-		cout << "4) Add an Book" << endl;
-		cout << "5) Display Current Books" << endl;
-		get_input("6) Exit\n**************************", userSelection);
+		cout << "3) Add a Book" << endl;
+		cout << "4) Display Current Books" << endl;
+		cout << "5) Add a Game" << endl;
+		cout << "6) Display Current Games" << endl;
+		get_input("7) Exit\n**************************", userSelection);
 
 		switch (userSelection)
 		{
@@ -96,7 +100,7 @@ int main()
 			 }
 			 break;
 
-		case 4: //Adding an book
+		case 3: //Adding a book
 			do
 			{
 				string title;
@@ -107,7 +111,7 @@ int main()
 
 				get_input("What is the title of the Book? ", title);
 				get_input("What is the authors's name? ", author);
-				get_input("What is the genre of the album? ", genre);
+				get_input("What is the genre of the book? ", genre);
 				get_input("How many pages are there? ", num_of_pages);
 				get_input("What year was the book released? ", year);
 
@@ -117,14 +121,40 @@ int main()
 			} while (status != 'n');
 			break;
 			
-		case 5: //Display the books
+		case 4: //Display the books
 			for (auto book : books)
 			{
 				cout << book->output() << endl;
 			}
 			break;
 
-		case 6: //Exit the system
+		case 5: //Adding a Game
+			do
+			{
+				string title;
+				string platform;
+				string genre;
+				int year;
+
+				get_input("What is the title of the Game? ", title);
+				get_input("What is the game's platform? ", platform);
+				get_input("What is the genre of the album? ", genre);
+				get_input("What year was the game released? ", year);
+
+				games.push_back(new Game{ title, platform, genre, year });
+
+				get_input("Do you want to add another game? (y or n)", status);
+			} while (status != 'n');
+			break;
+
+		case 6: //Display the games
+			for (auto game : games)
+			{
+				cout << game->output() << endl;
+			}
+			break;
+
+		case 7: //Exit the system
 			 break;
 
 		default: //Put something in me
