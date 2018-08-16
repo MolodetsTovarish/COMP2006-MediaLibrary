@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include"Media.h"
 #include "Album.h"
+#include <iostream>
 
 using namespace std;
 
@@ -33,13 +35,59 @@ void const get_input(const string question, T &input) { // see? see the T?
 	}
 }
 
+	
+
 int main()
 {
-	Album Queen{ "me", "Queen", "rock", 13, 1997, 140 };
+	
+	vector <Album> Albums;
+	
 
+	string title;
+	string artist;
+	string genre;
+	int num_of_tracks;
+	int year;
+	int runtime;
+
+	cout << "Enter a Title for the Album: ";
+	cin >> title;
+
+
+	cout << "Enter a Artist for the Album ";
+	cin >> artist;
+	
+
+	cout << "Enter a genre for the Album: ";
+	cin >> genre;
+	
+
+	cout << "Enter how many tacks are in the Album: ";
+	cin >> num_of_tracks;
+	
+
+	cout << "Enter what year the Album came out: ";
+	cin >> year;
+
+
+	cout << "Enter the runtime of the Album (in mintues): ";
+	cin >> runtime;
+
+	Album album{title, artist, genre, num_of_tracks, year, runtime};
+
+	Albums.push_back(album);
+
+	for (Album &album : Albums) {
+		album.output();
+	}
+
+<<<<<<< HEAD
 	cout << to_string(Queen.get_artist) << endl;
 
 	//cout <<  << endl;
+=======
+
+>>>>>>> c2adbca3d6f18cfee9bd65e939c9c409f81a2774
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');

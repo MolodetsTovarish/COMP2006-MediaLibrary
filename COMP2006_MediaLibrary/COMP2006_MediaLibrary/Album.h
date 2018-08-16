@@ -33,6 +33,10 @@ public:
 	//const string get_album();
 	//void set_album(const string &title, const string &artist, const string &genre, const int &num_of_tracks, /*tracks (list of tracks),*/ const int &year, const int &runtime);
 
+	// custom output
+	const string output();
+
+
 private:
 	string m_artist;
 	int m_num_of_tracks;

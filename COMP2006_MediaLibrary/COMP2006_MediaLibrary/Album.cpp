@@ -36,8 +36,15 @@
 		return m_artist;
 	}
 
-
 	const int Album::get_num_of_tracks()
 	{
 		return m_num_of_tracks;
 	}
+
+	// output
+	const string Album::output()
+	{
+		return "your album title is " + get_title() + ", the artist is "+ get_artist() + ", the Genre is " + get_genre() + ", It has " + to_string(get_num_of_tracks()) + " tracks in it, it came out in the year " + to_string(get_year()) + " and its total runtime is " + to_string(get_runtime()) + " minutes.";
+	}
+
+
