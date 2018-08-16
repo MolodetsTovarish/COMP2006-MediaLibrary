@@ -44,5 +44,5 @@ const int Book::get_num_of_pages()
 // output
 const string Book::output()
 {
-	return "your book title is " + get_title() + '\n' + "the artist is " + get_author() + '\n' + "the Genre is " + get_genre() + '\n' + "It has " + to_string(get_num_of_pages()) + " tracks in it" + '\n' + "It came out in the year " + to_string(get_year()) + "\n";
+	return "Your book title is " + get_title() + '\n' + "The artist is " + get_author() + '\n' + "The Genre is " + get_genre() + '\n' + "It has " + to_string(get_num_of_pages()) + " tracks in it" + '\n' + "It came out in the year " + to_string(get_year()) + "\n";
 }

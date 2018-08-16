@@ -30,5 +30,5 @@ void Game::set_platform(string platform)
 // output
 const string Game::output()
 {
-	return "your game title is " + get_title() + '\n' + "the platform is " + get_platform() + '\n' + "the Genre is " + get_genre() + '\n' + " tracks in it" + '\n' + "It came out in the year " + to_string(get_year()) + "\n";
+	return "Your game title is " + get_title() + '\n' + "The platform is " + get_platform() + '\n' + "The Genre is " + get_genre() + '\n' + " tracks in it" + '\n' + "It came out in the year " + to_string(get_year()) + "\n";
 }

@@ -44,5 +44,5 @@
 	// output
 	const string Album::output()
 	{
-		return "your album title is " + get_title() + '\n' + "the artist is " + get_artist() + '\n'+ "the Genre is " + get_genre() + '\n' + "It has " + to_string(get_num_of_tracks()) +  " tracks in it" + '\n'  + "It came out in the year " + to_string(get_year()) + '\n'+ "And its total runtime is " + to_string(get_runtime()) + " minutes." + "\n";
+		return "Your album title is " + get_title() + '\n' + "The artist is " + get_artist() + '\n'+ "The Genre is " + get_genre() + '\n' + "It has " + to_string(get_num_of_tracks()) +  " tracks in it" + '\n'  + "It came out in the year " + to_string(get_year()) + '\n'+ "And its total runtime is " + to_string(get_runtime()) + " minutes." + "\n";
 	}
