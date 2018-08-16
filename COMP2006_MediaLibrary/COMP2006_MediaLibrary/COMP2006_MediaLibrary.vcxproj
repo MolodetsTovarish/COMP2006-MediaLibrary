@@ -119,20 +119,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Album.h" />
-    <ClInclude Include="Book.h" />
-    <ClInclude Include="Game.h" />
     <ClInclude Include="Media.h" />
-    <ClInclude Include="Movie.h" />
-    <ClInclude Include="TV.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Album.cpp" />
-    <ClCompile Include="Book.cpp" />
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Media.cpp" />
-    <ClCompile Include="Movie.cpp" />
-    <ClCompile Include="TV.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

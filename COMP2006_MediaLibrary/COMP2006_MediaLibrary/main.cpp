@@ -2,10 +2,6 @@
 #include <string>
 #include <vector>
 #include "Album.h"
-#include "Book.h"
-#include "Game.h"
-#include "Movie.h"
-#include "TV.h"
 
 using namespace std;
 
@@ -35,14 +31,15 @@ void const get_input(const string question, T &input) { // see? see the T?
 		//character
 			cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	}
-}
+}
+
 int main()
 {
 	Album Queen{ "me", "Queen", "rock", 13, 1997, 140.f };
 
-	//cout << Queen.get_artist << endl;
+	cout << Queen.get_artist << endl;
 
-	cout << "daddy" << endl;
+	cout << "fuck" << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
