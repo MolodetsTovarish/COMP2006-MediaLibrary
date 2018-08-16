@@ -81,13 +81,9 @@ int main()
 		album.output();
 	}
 
-<<<<<<< HEAD
 	cout << to_string(Queen.get_artist) << endl;
 
 	//cout <<  << endl;
-=======
-
->>>>>>> c2adbca3d6f18cfee9bd65e939c9c409f81a2774
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
