@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <iostream>
 #include"Media.h"
 #include "Album.h"
-#include <iostream>
 
 using namespace std;
 
@@ -39,10 +39,8 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
+	vector <Media*> mediaobjects;
 	
-	vector <Album> Albums;
-	
-
 	string title;
 	string artist;
 	string genre;
@@ -73,17 +71,14 @@ int main()
 	cout << "Enter the runtime of the Album (in mintues): ";
 	cin >> runtime;
 
-	Album album{title, artist, genre, num_of_tracks, year, runtime};
+	//Media album{title, artist, genre, num_of_tracks, year, runtime};
 
-	Albums.push_back(album);
+	mediaobjects.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
 
-	for (Album &album : Albums) {
-		album.output();
+	for (auto mediaobject : mediaobjects)
+	{
+		mediaobject.output();
 	}
-
-	cout << to_string(Queen.get_artist) << endl;
-
-	//cout <<  << endl;
 
 	cin.clear();
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
