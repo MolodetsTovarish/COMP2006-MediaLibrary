@@ -39,7 +39,7 @@ void const get_input(const string question, T &input) { // see? see the T?
 
 int main()
 {
-	vector<Media*> mediaobjects;
+	vector<Album*> mediaobjects;
 
 	string title;
 	string artist;
@@ -68,9 +68,9 @@ int main()
 
 	mediaobjects.push_back(new Album{ title, artist, genre, num_of_tracks, year, runtime });
 
-	for (auto mediaobject : mediaobjects)
+	for (auto album : mediaobjects)
 	{
-		cout << mediaobject->output() << endl;
+		cout << album->output() << endl;
 	}
 
 	cin.clear();
