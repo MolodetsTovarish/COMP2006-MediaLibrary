@@ -58,7 +58,7 @@ int main()
 	do
 	{
 		char status = 'y';
-		userSelection = 3;
+		userSelection = 9;
 
 		cout << "**************************" << endl;
 		cout << "Please Select an Option" << endl;
@@ -185,13 +185,13 @@ int main()
 			break;
 
 		case 9: //Exit the system
+			userSelection = 9;
 			 break;
-
 		default: //Put something in me
-			 userSelection = 3;
+			 userSelection = 9;
 			 break;
 		}//End of switch
-	} while (userSelection != 3); //End of loop
+	} while (userSelection != 9); //End of loop
 
 
 	//Exit protocol
